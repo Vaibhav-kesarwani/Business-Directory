@@ -4,7 +4,7 @@ import { Image, View, Text, TextInput } from "react-native";
 import { Colors } from "./../../constants/Colors";
 import { AntDesign } from "@expo/vector-icons";
 
-export default function Header() {
+export default function Header() { 
   const { user } = useUser();
 
   return (
