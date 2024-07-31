@@ -22,7 +22,9 @@ export default function CategoryItem({ category, onCategoryPress }) {
         style={{
           fontSize: 12,
           fontFamily: "outfit-medium",
-          paddingLeft: 8,
+          textAlign: "center",
+          paddingRight: 5,
+          marginRight: 10,
           marginTop: 5,
         }}
       >
