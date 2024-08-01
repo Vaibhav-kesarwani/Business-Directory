@@ -28,10 +28,11 @@ export default function PopularBusiness() {
       <View
         style={{
           padding: 20,
+          marginBottom: 10,
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
-          marginTop: 10,
+          marginTop: 20,
         }}
       >
         <Text
