@@ -13,6 +13,7 @@ export default function PopularBusiness() {
   }, []);
 
   const GetBusinessList = async () => {
+    setBusinessList([]);
     const q = query(collection(db, "BusinessList"), limit(10));
     const querySnapshot = await getDocs(q);
 
@@ -47,8 +48,10 @@ export default function PopularBusiness() {
       </View>
       <FlatList
         data={businessList}
-        renderItem={({item, index}) => (
-          <PopularBusinessCard business={item} />
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+        renderItem={({ item, index }) => (
+          <PopularBusinessCard business={item} key={index} />
         )}
       />
     </View>
